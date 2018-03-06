@@ -1,0 +1,63 @@
+
+.web-navegador{
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    //float: none;
+    //display: flex;
+    //flex-direction: column;
+    //float: left;
+   // padding: 4px 8px 4px 20px;
+    background: fade-out(#ffffff, 0.15);
+    //text-align: center;
+    position: fixed;
+
+     transition: background 0.2;
+            &:hover {
+                background: #ccffe6;
+         }
+        
+ 
+    .cajanavegador{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: left;
+        //align-items: center;
+        //width: 90px;
+        //margin: 10px;
+        justify-content: center;
+        background: #ffffff;
+        //height: 240px;
+        //max-height: 240px;
+        //overflow: hidden;
+            }
+
+    .lletres{
+            font-family:  Helvetica, sans-serif;
+            text-align: center;
+            font-size: 10px;
+            margin: 10px;
+            height: 10px;
+        }
+
+    .icono{
+                width: 55%;
+                height: 55%;
+                //align-items: center;
+                // margin-left: 1px;
+    }
+              
+       @include if-desktop {
+            width: 170px; 
+        }
+            
+        /*@include if-tablet-portrait {
+            div.web-navegador{
+                display:none
+}
+        }*/
+        
+    
+   
+}

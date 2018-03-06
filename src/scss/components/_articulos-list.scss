@@ -1,0 +1,53 @@
+
+.article-list{
+    width: 75%;
+    //margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    float:right;
+    .caixa-fotos-esquerra{
+        float:left;
+    }
+#fotogran{
+    width: 100%;
+}
+#cover1{
+    width: 100%;
+    justify-content: center;
+}
+    .foto-decoracio{
+        box-sizing: border-box;
+        width:calc(50% - 10px);
+        float: left;
+        padding: 15px;
+        margin: 10px 5px;
+        background: $color-silver;
+        height: 240px;
+        max-height: 240px;
+        overflow: hidden;
+
+        @include if-mobile-landscape {
+            width: calc(25% - 10px)
+        }
+
+        @include if-desktop {
+            width: 100%
+        }
+
+        .cover{
+            width:100%;
+            @include if-desktop {
+                width: 100%
+            }
+        }
+
+        .artist{
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .title{
+            margin-top: 5px;
+        }
+    }
+}

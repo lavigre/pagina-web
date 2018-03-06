@@ -1,0 +1,56 @@
+.web-header{
+    display: flex;
+    //justify-content: flex-end;
+    padding: 4px 8px 4px 0px;
+    box-sizing: border-box;
+    background: fade-out(#ffffff, 0.15);
+    color: #ffffff;
+    //text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+
+    transition: background 0.2;
+    &:hover {
+        background: #ccffe6;
+    }
+    .icono{
+        width:29%;
+    }
+    .web-title {
+        display: flex;
+        width:100%;
+        margin: 10px;
+        color: #000000;
+        //la justificación centrada
+        justify-content: flex-start;
+        //alinear los elementos
+        //align-items: center;
+        font-size: $font-size-large;
+        //font-weight: bold;
+        text-transform: uppercase;
+        
+    }
+
+    .form-search{
+        display: flex;
+        color: #000000;
+        //width:100px;
+        //elementos centrados
+        //align-items: center;
+        //justify-content: flex-end;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-weight: bold;
+        .busquedas{
+            width: 150px;
+            margin-left: 15px;
+            //margin-top: 10px;
+            padding: 5px;
+            background-color: $color-silver;
+        }
+    }
+
+}

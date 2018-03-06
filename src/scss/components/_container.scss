@@ -1,0 +1,9 @@
+/*.container {
+    width: 100%;
+
+//si es mas grande que 1024 no se hace mas grande el contenido 
+    @include if-desktop{
+        margin: 0 auto;
+        width: 1024px;
+    }
+}*/
